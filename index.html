@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="shortcut icon" href="icon/cloudy.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#333" />
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        
+        <div id="current-date"></div>
+
+        
+        <label for="city">Choose a city:</label>
+        <select id="city" onchange="fetchWeatherData()">
+            <option value="">Select a City</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Manila">Manila</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Davao">Davao</option>
+        </select>
+
+        
+        <button onclick="fetchWeatherData()">Get Weather</button>
+
+        <div id="weather-results">
+            <h3>Weather Data</h3>
+            <p id="weather-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
